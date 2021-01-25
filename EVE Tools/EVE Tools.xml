@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EVE Tools</name>
+    </assembly>
+    <members>
+        <member name="T:EVE_Tools.Program">
+            <summary>
+            The Program class.
+            </summary>
+        </member>
+        <member name="M:EVE_Tools.Program.Main(System.String[])">
+            <summary>
+            The Main method. This is where the program begins.
+            </summary>
+            <param name="args">An array of strings. The arguments passed to the executable.</param>
+        </member>
+        <member name="M:EVE_Tools.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Gets the <see cref="T:Microsoft.Extensions.Hosting.IHostBuilder"/>.
+            </summary>
+            <param name="args">Pass the arguments from the main method.</param>
+            <returns><see cref="T:Microsoft.Extensions.Hosting.IHostBuilder"/>.</returns>
+        </member>
+        <member name="T:EVE_Tools.Startup">
+            <summary>
+            The startup class.
+            </summary>
+        </member>
+        <member name="M:EVE_Tools.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EVE_Tools.Startup"/> class.
+            </summary>
+            <param name="configuration">Returns <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/>.</param>
+        </member>
+        <member name="P:EVE_Tools.Startup.Configuration">
+            <summary>
+            Gets the Configuration.
+            </summary>
+        </member>
+        <member name="M:EVE_Tools.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940.
+            </summary>
+            <param name="services"><see cref="!:IServiceCollection>"/>.</param>
+        </member>
+        <member name="M:EVE_Tools.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"><see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="env"><see cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/>.</param>
+        </member>
+    </members>
+</doc>
